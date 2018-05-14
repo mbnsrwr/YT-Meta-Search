@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Videos Meta Search</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".fancybox").fancybox();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container" style="float:right; width:65%;">
+        <header>
+            <h1>Videos Meta<span> Search</span></h1>
+            <p>An intelligent alternative for your Youtube Experience.</p>
+        </header>
+        <section>
+            <form id="search-form" name="search-form" onsubmit="return search()">
+                <div class="field-container">
+                    <input id="query" class="search-field" type="search" placeholder="Search YouTube">
+                    <input id="search-btn" type="submit" name="search-btn" value="">
+                </div>
+            </form>
+
+            <ul id="results"></ul>
+            <div id="buttons"></div>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2018, All Rights Reserved</p>
+        </footer>
+    </div>
+    <div id="container" class="lefter" style="float:left; height: 500px; width:20%;display: none; position: fixed; overflow-y:auto; ">
+         <div class="facet">
+
+                <br/>
+                <p><a id='a1' > +  TV shows (<span id = "TVS"> </span>) </a>
+                <ul id="tvshows"></ul></p>
+
+                <p><a id='a2'> +  Politics (<span id = "POL"> </span>) </a></p>
+                <ul id="politics"></ul>
+
+                <p><a id='a3'> + MUSIC (<span id = "MUS"> </span>) </a></p>
+                <ul id="music"></ul>
+
+                <p><a id='a4'> + SPORTS (<span id = "SPO"> </span>) </a></p>
+                <ul id="sports"></ul>
+
+                <p><a id='a5'> + Entertainment (<span id = "ENT"> </span>) </a></p>
+                <ul id="entertainment"></ul>
+
+                <p><a id='a6'> +  Technology (<span id = "TEC"> </span>) </a></p>                
+                <ul id="technology"></ul>
+
+                <p><a id='a7'> +  Business (<span id = "BUS"> </span>) </a></p>
+                <ul id="business"></ul>
+
+                <p><a id='a8'> +  Health (<span id = "HEA"> </span>) </a></p>
+                <ul id="health"></ul>                
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
